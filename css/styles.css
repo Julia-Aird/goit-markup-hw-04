@@ -179,13 +179,11 @@ padding-bottom: 120px;}
     background-color: var(--second-cloud-color);
 }
 
-.icon-strategy::before {background-image: url(../images/Vector.svg);}
+.icon-strategy::before {background-image: url(../images/strategy.svg);}
 
 .icon-punctuality::before {background-image: url(../images/punctuality.svg);}
 
 .icon-dilligence::before {background-image: url(../images/dilligence.svg);}
-
-.icon-technologiies::before {background-image: url(../images/);}
 
 .icon-technologiies::before {background-image: url(../images/technologies.svg);}
 
