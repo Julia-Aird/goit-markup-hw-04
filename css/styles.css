@@ -119,8 +119,8 @@ color: var(--main-text-color);}
     text-align: center;
 padding-top: 188px;
 padding-bottom: 188px;
-width: 1440px;
-height: 600px;
+max-width: 1440px;
+min-height: 600px;
 margin-left: auto;
 margin-right: auto;
 background-repeat: no-repeat;
@@ -326,6 +326,21 @@ padding-bottom: 100px;}
     color: var(--corn-color);
     margin-top: 16px;
 width: 264px;}
+
+.footer-container {display: flex;
+align-items: flex-start;}
+
+.footer-list {margin-right: 120px;}
+
+.footer-soc-title {color: var(--main-white-color);
+font-size: 16px;
+line-height: var(--typical-line-height);
+letter-spacing: var(--typical-letter-spacing);
+margin-bottom: 16px;}
+
+.footer-soc-link {background-color: rgba(255, 255, 255, 0.1);}
+
+.footer-soc-icon {fill: var(--second-cloud-color);}
 
 /* Послуги */
 
