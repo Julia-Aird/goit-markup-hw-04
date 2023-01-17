@@ -119,9 +119,11 @@ color: var(--main-text-color);}
     text-align: center;
 padding-top: 188px;
 padding-bottom: 188px;
-}
-
-.overlay {}
+max-width: 1440px;
+height: 600px;
+outline: 2px solid teal;
+background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/office.jpg);}
 
 .hero-title {font-size: 56px;
 line-height: 1.07;
@@ -166,6 +168,26 @@ padding-bottom: 120px;}
 .features-item {flex-basis: calc((100% - 72px) / 4);}
 
 .features-item:nth-child(4n + 4) {margin-right: 0;}
+
+.features-item::before {display: flex;
+    content: "";
+    height: 112px;
+    outline: 2px solid teal;
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: contain;
+    background-color: var(--second-cloud-color);
+}
+
+.icon-strategy::before {background-image: url(../images/Vector.svg);}
+
+.icon-punctuality::before {background-image: url(../images/punctuality.svg);}
+
+.icon-dilligence::before {background-image: url(../images/dilligence.svg);}
+
+.icon-technologiies::before {background-image: url(../images/);}
+
+.icon-technologiies::before {background-image: url(../images/technologies.svg);}
 
 .features-title {font-weight: 500;
     font-size: 20px;
