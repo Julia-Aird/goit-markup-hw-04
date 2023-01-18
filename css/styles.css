@@ -5,6 +5,9 @@
     --second-cloud-color:  #F4F4FD;
     --corn-color: #E7E9FC;
     --hover-bgc: #404BBF;
+    --second-hover-bgc: #31D0AA;
+    --border-grey-color: #8E8F99;
+    --logo-grey-color: #AFB1B8;
     --typical-line-height: 1.5;
     --typical-letter-spacing: 0.02em;}
 
@@ -159,7 +162,7 @@ min-width: 169px;}
 
 .hero-button:hover,
 .hero-button:focus,
-.hero-button:active{color:var(--second-cloud-color)}
+.hero-button:active{background-color: var(--hover-bgc)}
 
 /* Переваги */
 
@@ -198,6 +201,7 @@ padding-bottom: 120px;}
     line-height: 1.2;
     letter-spacing: var(--typical-letter-spacing);
     color: var(--second-text-color);
+    margin-top: 8px;
     margin-bottom: 8px;}
 
 .features-paragraph {font-size: 16px;
@@ -280,9 +284,9 @@ justify-content: center;
 .team-soc-icon {fill: var(--second-cloud-color);}
 
 .examples-list {display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;}
+flex-wrap: wrap;
+row-gap: 48px;
+column-gap: 24px;}
 
 .examples-item {flex-basis: calc((100% - 48px) / 3);}
 
@@ -301,6 +305,45 @@ line-height: var(--typical-line-height);
 letter-spacing: var(--typical-letter-spacing);}
 
 .team-subtitle {margin-bottom: 8px;}
+
+
+/*  Клієнти  */
+
+.customers {padding-top: 130px;
+padding-bottom: 120px;}
+
+.customers-title {font-style: bold;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: var(--typical-letter-spacing);
+    text-align: center;
+    color: var(--second-text-color);
+    margin-bottom: 72px;}
+
+.customers-list {display: flex;
+gap: 24px;}
+
+.customers-item {
+width: calc((100% - 120px) / 6);
+height: 90px;}
+
+.customers-link {width: 100%;
+height: 100%;
+border: 1px solid var(--border-grey-color);
+display: flex;
+border-radius: 4px;
+justify-content: center;
+align-items: center;}
+
+.customers-icon {fill:  var(--logo-grey-color)}
+
+.customers-link:is(:hover, :focus) {
+    border-color: var(--hover-bgc);
+}
+
+.customers-link:is(:hover, :focus) .customers-icon {
+    fill: var(--hover-bgc);
+}
 
 /* Футер */
 
@@ -334,11 +377,16 @@ align-items: flex-start;}
 
 .footer-soc-title {color: var(--main-white-color);
 font-size: 16px;
+font-weight: 500;
 line-height: var(--typical-line-height);
 letter-spacing: var(--typical-letter-spacing);
 margin-bottom: 16px;}
 
 .footer-soc-link {background-color: rgba(255, 255, 255, 0.1);}
+
+.footer-soc-link:is(:hover,:focus) {
+    background-color: var(--second-hover-bgc);
+}
 
 .footer-soc-icon {fill: var(--second-cloud-color);}
 
