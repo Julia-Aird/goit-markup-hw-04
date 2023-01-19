@@ -32,8 +32,8 @@ height: auto;}
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
-margin-right: auto;
-outline: 2px solid teal;}
+margin-right: auto;}
+/* outline: 2px solid teal;} */
 
 .header a {
     display: block;
@@ -52,7 +52,7 @@ padding-bottom: 24px;}
     clip: rect(0 0 0 0);
     overflow: hidden;}
 
-/* .header { } */
+.header { border-bottom: 1px solid var(--corn-color);}
 
 .header-navigation {display: flex;
 align-items: center;}
@@ -63,7 +63,7 @@ align-items: center;}
 
 .header-container {display: flex;
 align-items: center;
-border-bottom: 1px solid var(--corn-color);}
+}
 
 /* Лого */
 
@@ -129,7 +129,7 @@ margin-right: auto;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-outline: 2px solid teal;
+/* outline: 2px solid teal; */
 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 url(../images/office.jpg);}
 
@@ -181,7 +181,7 @@ padding-bottom: 120px;}
 .features-item::before {display: flex;
     content: "";
     height: 112px;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
     background-repeat: no-repeat;
     background-position: center;
     block-size: contain;
@@ -242,7 +242,10 @@ padding-bottom: 120px;}
 text-align: center;}
 
 .team-item {background-color: var(--main-white-color);
-margin-right: 24px;}
+margin-right: 24px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);}
     
 .team-item:nth-child(4n+4) {margin-right: 0;}
 
@@ -289,6 +292,8 @@ row-gap: 48px;
 column-gap: 24px;}
 
 .examples-item {flex-basis: calc((100% - 48px) / 3);}
+
+.examples-item:hover {box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);}
 
 .examples-container {padding-top: 32px;
 padding-bottom: 32px;
@@ -411,12 +416,14 @@ padding-bottom: 120px;}
     border-radius: 4px;
     padding: 12px 24px;}
 
-.services-item:not(:last-child) {margin-right: 24px;}    
+.services-item:not(:last-child) {margin-right: 24px;}   
 
-.services-button:hover, 
-.services-button:focus,
-.services-button:active { color: var(--main-white-color);
-background-color: var(--hover-bgc);}
+.services-button:is(:hover, :focus, :active) {color: var(--main-white-color);
+background-color: var(--hover-bgc);
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
+border-color: #404BBF ;
+}
+
 
 
 
