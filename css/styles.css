@@ -62,8 +62,7 @@ align-items: center;}
 .header-item:not(:last-child) {margin-right: 40px;}
 
 .header-container {display: flex;
-align-items: center;
-}
+align-items: center;}
 
 /* Лого */
 
@@ -141,7 +140,7 @@ color: var(--main-white-color);
 margin-bottom: 48px;
 margin-left: auto;
 margin-right: auto;
-max-width: 496px;}
+max-width: 500px;}
 
    /* Кнопка замовлення */
 
@@ -168,7 +167,6 @@ min-width: 169px;}
 
 .features {padding-top: 120px;
 padding-bottom: 120px;}
-
 
 .features-list {display: flex;}
 
@@ -261,13 +259,10 @@ box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 
 
 
 .team-soc-list {display: flex;
-justify-content: center;
-}
+justify-content: center;}
 
-.team-soc-item {
-    width: 40px;
-    height: 40px;
-}
+.team-soc-item {width: 40px;
+    height: 40px;}
 
 .team-soc-item:not(:last-child) {margin-right: 24px;}
 
@@ -277,12 +272,9 @@ justify-content: center;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
 
-.team-soc-link:is(:hover,:focus) {
-    background-color: var(--hover-bgc);
-}
+.team-soc-link:is(:hover,:focus) {background-color: var(--hover-bgc);}
 
 .team-soc-icon {fill: var(--second-cloud-color);}
 
@@ -328,8 +320,7 @@ padding-bottom: 120px;}
 .customers-list {display: flex;
 gap: 24px;}
 
-.customers-item {
-width: calc((100% - 120px) / 6);
+.customers-item {width: calc((100% - 120px) / 6);
 height: 90px;}
 
 .customers-link {width: 100%;
@@ -342,9 +333,7 @@ align-items: center;}
 
 .customers-icon {fill:  var(--logo-grey-color)}
 
-.customers-link:is(:hover, :focus) {
-    border-color: var(--hover-bgc);
-}
+.customers-link:is(:hover, :focus) {border-color: var(--hover-bgc);}
 
 .customers-link:is(:hover, :focus) .customers-icon {
     fill: var(--hover-bgc);
@@ -421,8 +410,7 @@ padding-bottom: 120px;}
 .services-button:is(:hover, :focus, :active) {color: var(--main-white-color);
 background-color: var(--hover-bgc);
 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.08), 0 3px 1px rgba(0, 0, 0, 0.1);
-border-color: #404BBF ;
-}
+border-color: #404BBF;}
 
 
 
