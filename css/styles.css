@@ -272,11 +272,12 @@ justify-content: center;}
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    fill: var(--second-cloud-color);}
 
 .team-soc-link:is(:hover,:focus) {background-color: var(--hover-bgc);}
 
-.team-soc-icon {fill: var(--second-cloud-color);}
+/* Приклади робіт */
 
 .examples-list {display: flex;
 flex-wrap: wrap;
@@ -285,7 +286,9 @@ column-gap: 24px;}
 
 .examples-item {flex-basis: calc((100% - 48px) / 3);}
 
-.examples-item:hover {box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);}
+.examples-item a {display: block;}
+
+.examples-link:is(:hover, :focus){box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);}
 
 .examples-container {padding-top: 32px;
 padding-bottom: 32px;
@@ -365,7 +368,7 @@ padding-bottom: 100px;}
 width: 264px;}
 
 .footer-container {display: flex;
-align-items: flex-start;}
+align-items: baseline;}
 
 .footer-list {margin-right: 120px;}
 
@@ -379,10 +382,7 @@ margin-bottom: 16px;}
 .footer-soc-link {background-color: rgba(255, 255, 255, 0.1);}
 
 .footer-soc-link:is(:hover,:focus) {
-    background-color: var(--second-hover-bgc);
-}
-
-.footer-soc-icon {fill: var(--second-cloud-color);}
+    background-color: var(--second-hover-bgc);}
 
 /* Послуги */
 
